@@ -1,0 +1,1111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+}
+a, a:hover {
+    text-decoration: none;
+}
+/* -------start_header---------- */
+header {
+    background-color: rgb(255, 70, 0);
+    color: #000;
+    padding: 5px 0px ;
+}
+header .col a.text {
+    float: right;
+    padding: 3px 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    background-color: rgba(141, 38, 0, 0.445);
+    transition: all 0.3s ease-in;
+    border-radius: 15px;
+}
+header .col a.text:hover {
+    background-color: rgba(141, 38, 0, 0.774);
+}
+header .col a.text:last-child {
+    background-color: rgb(71, 24, 24);
+    color: rgb(255, 70, 0);
+    transition: all 0.3s ease-in;
+}
+header .col a.text:last-child:hover {
+    background-color: rgb(0, 0, 0);
+}
+/* -------end_header---------- */
+/* ---------start navbar--------- */
+.navbar {
+    background-color: #000000;
+}
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    line-height: 15px;
+}
+.navbar .navbar-brand i {
+    font-size: 60px;
+    color: rgba(255, 68, 0, 0.767);
+    transition: color 0.4s ease-in;
+}
+.navbar .navbar-brand .name_site {
+    color: rgba(255, 68, 0, 0.767);
+    margin-left: 10px;
+    max-width: 160px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    transition: color 0.4s ease-in;
+}
+.navbar .navbar-brand:hover i,
+.navbar .navbar-brand:hover .name_site {
+    color: rgb(255, 70, 0);
+}
+.navbar .navbar-brand .name_site h3 {
+    margin-bottom: 3px;
+    width: 100%;
+}
+.navbar .navbar-brand .name_site p {
+    width: 100%;
+    font-size: small;
+    color: rgba(255, 68, 0, 0.534);
+    margin-bottom: 0;
+}
+.navbar-light .navbar-toggler-icon {
+    background-color: rgb(255, 70, 0);
+    box-shadow: rgba(255, 68, 0, 0.534) 3px 3px 2px;
+    border-radius: 10px 1px;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+.navbar .collapse .navbar-nav .nav-item:hover .nav-link,
+.navbar .collapse .navbar-nav .active .nav-link {
+    color: rgb(255, 70, 0);
+}
+.navbar .collapse .navbar-nav .nav-item a {
+    display: block;
+    position: relative;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 68, 0, 0.925);
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    transition: width 0.5s ease-in-out;
+}
+.navbar .collapse .navbar-nav .nav-item:hover a::before {
+    width: 90%;
+}
+nav .dropdown-menu {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid rgba(255, 38, 0, 0.479);
+}
+nav .dropdown-menu .dropdown-item {
+    color: white;
+}
+nav .dropdown-menu .dropdown-item:hover,
+nav .dropdown-menu .dropdown-item:focus {
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 70, 0);
+}
+.dropdown-toggle-plus::after {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    border-top: .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid;
+}
+.dropdown-menu-plus {
+    left: -118%;
+    top: 0;
+}
+/* ---------end navbar--------- */
+/* -------start_slider---------- */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1;
+}
+.carousel-indicators li {
+    width: 30px;
+    height: 15px;
+    background-color: rgb(255, 70, 0);
+}
+
+
+/* -------end_slider---------- */
+/* -------start_feutures---------- */
+.feutures {
+    background-color: rgba(0, 0, 0, 0.027);
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.feutures .feutures_item {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.feutures h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.feutures .feutures_item i {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    line-height: 60px;
+    color: rgb(255, 70, 0);
+    font-size: 30px;
+    transition: opacity 0.5s ease-in-out;
+}
+.feutures .feutures_item h3 {
+    display: inline-block;
+    border-bottom: rgb(255, 70, 0) solid 2px;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.feutures .feutures_item p {
+    color: rgb(95, 93, 93);
+    line-height: 1.8;
+    text-align: justify!important;
+}
+.feutures .feutures_item button {
+    background-color: rgba(0, 0, 0, 0.829);
+    color: rgb(255, 70, 0);
+    transition: all 0.4s ease-in;
+    position: relative;
+}
+.feutures .feutures_item button:hover {
+    background-color: black;
+}
+/* -------end_feutures---------- */
+
+/* ------start Our educational programs---- */
+.our-prog {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.our-prog h2 {
+    font-size: 40px;
+    position: relative;
+}
+.our-prog .prog_item {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.596);
+    border-radius: 50% 50% 10% 10%;
+    text-align: center;
+    height: 365px;
+    display: flex;
+    justify-content: center;
+}
+.our-prog .prog_item > a {
+    color: black;
+}
+.our-prog .prog_item .overlay {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px 100px 0px 100px;
+    background-color: rgba(255, 70, 0, 0);
+    transition: all 0.3s ease-in;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-prog .prog_item .overlay span {
+    display: block;
+    color: rgb(255, 70, 0);
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 20px 10px;
+    border-radius: 50% 50% 0 50%;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.our-prog .prog_item:hover .overlay span {
+    opacity: 1;
+}
+.our-prog .prog_item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.our-prog .prog-img {
+    width: 200px;
+    border-radius: 100px 100px 0px 100px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+.our-prog .tag {
+    display: inline-block;
+    background-color: rgba(255, 68, 0, 0.678);
+    padding: 1px 5px;
+    border-radius:10px;
+}
+.our-prog .prog_item:last-child .overlay i {
+    opacity: 0.3;
+    display: block;
+    transition: font-size 0.3s ease-in;
+}
+.our-prog .prog_item:hover .overlay i {
+    font-size: 60px;
+}
+.our-prog .prog_item:last-child .read_more {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 100px 100px 0px 100px;
+}
+.our-prog .prog_item:last-child .browse_all {
+    color: rgba(0, 0, 0, 0.5);
+}
+.our-prog .prog_item a .tag,
+.our-prog .prog_item a .prog-title,
+.our-prog .prog_item a > span {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+.our-prog .prog_item:hover a .tag,
+.our-prog .prog_item:hover a .prog-title,
+.our-prog .prog_item:hover a > span {
+    opacity: 1;
+}
+
+/* ------end Our educational programs---- */
+
+/* -------start_our team---------- */
+.our-team {
+    background-color: rgb(223, 222, 222);
+    background-image: url(../images/back8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: solid 5px rgb(255, 70, 0);
+}
+.our-team h2 {
+    color: white;
+}
+.our-team .card-title {
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: inline-block;
+}
+.our-team .card-text {
+    color: rgb(189, 185, 185);
+}
+.our-team .card .card-body i {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    line-height: 30px;
+    color: rgb(255, 70, 0);
+    font-size: 15px;
+    border-radius: 50%;
+}
+/* -------end_our team---------- */
+/* -------start statstic---------- */
+.statstic {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/back5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.statstic .overlay {
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.statstic .overlay h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.statstic .overlay h3 {
+    color: rgb(255, 70, 0);
+    margin-top: 0px;
+}
+.statstic .overlay p {
+    color: rgb(255, 70, 0);
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+/* -------end statstic---------- */
+
+/* -------start our_customers---------- */
+.our_customers {
+    margin-top: 100px;
+    background-color: #eee;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 300px;
+    padding: 30px 50px;
+    border-bottom: solid 5px rgb(255, 68, 0);
+}
+.our_customers h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.our_customers .container .row {
+    display: flex; 
+    justify-content: space-evenly;
+}
+.our_customers .container .row .col-lg {
+    display: flex;
+    padding: 5px;
+}
+/* -------end our_customers---------- */
+/* -------start recent news---------- */
+.recent_news h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.recent_news .card {
+    position: relative;
+}
+.recent_news .card .date-news {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(255, 68, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+.recent_news .btn-dark {
+    background-color: rgba(0, 0, 0, 0.884);
+}
+.recent_news .btn-dark:hover {
+    background-color: black;
+}
+.recent_news .container > a { 
+    color: black;
+    transition: all 0.3s ease-in;
+    border-bottom: solid 2px rgb(255, 70, 0);
+    border-radius: 10px;
+}
+.recent_news .container > a:hover {
+    color: rgb(255, 70, 0);
+}
+/* -------end recent news---------- */
+/* -------start footer---------- */
+footer {
+    background-color: black;
+}
+footer .f-item {
+    padding: 10px;
+    transition: all 0.5s ease-in;
+}
+footer .f-item:hover {
+    background-color: rgb(5, 5, 5);
+}
+footer .f-item .navbar-brand {
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+footer .f-item .navbar-brand i {
+    font-size: 60px;
+    color: rgba(255, 68, 0, 0.774);
+    transition: color 0.4s ease-in;
+}
+footer .f-item .navbar-brand .name_site {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 15px;
+}
+footer .f-item .navbar-brand .name_site h3 {
+    width: 100%;
+    margin-bottom: 5px;
+    color: rgba(255, 68, 0, 0.774);
+    transition: color 0.4s ease-in;
+}
+footer .f-item .navbar-brand .name_site p {
+    margin-bottom: 0;
+    color: rgba(255, 68, 0, 0.582);
+}
+footer .f-item .navbar-brand:hover .name_site h3,
+footer .f-item .navbar-brand:hover i {
+    color: rgb(255, 70, 0);
+}
+footer p {
+    color: rgb(192, 192, 192);
+    text-align: justify!important;
+    font-size: small;
+}
+footer .f-item .heads-f {
+    display: flex;
+    align-items: center;
+}
+footer .f-item .heads-f i.fa-link,
+footer .f-item .heads-f i.fa-plus-square,
+footer .f-item .heads-f i.fa-map-marker-alt {
+    font-size: 22px;
+    color: white;
+}
+footer .f-item .heads-f h3 {
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+footer ul {
+    margin-top: 20px;
+}
+footer .f-item .link li {
+    margin-bottom: 10px;
+}
+footer .f-item .link li a {
+    text-decoration: none;
+    color: white;
+    word-spacing: 5px;
+    transition: color 0.5s ease-in-out;
+}
+footer .f-item .link li a:hover,
+footer .f-item .link li.active a {
+    color: rgb(255, 68, 0);
+    text-decoration: none;
+}
+footer .f-item .link li a i {
+    color: rgb(255, 68, 0);
+    opacity: 0.02;
+    transition: opacity 0.5s ease-in-out;
+}
+footer .f-item .link li:hover a i {
+    opacity: 1;
+}
+footer .f-item .icon-follow li {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 68, 0, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+footer .f-item .icon-follow li:hover {
+    background-color: rgb(255, 68, 0);
+}
+footer .f-item .icon-follow li i {
+    display: block;
+    color: black;
+    font-size: x-large;
+}
+footer .f-item .contact li i {
+    margin-top: 7px;
+    color: rgb(192, 192, 192);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+footer .f-item .contact li:hover i {
+    opacity: 1;
+}
+footer .f-item .contact li p {
+    margin-bottom: 3px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.end-footer {
+    height: 40px;
+    background-color: rgb(255, 68, 0);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scrollToHome {
+    color: rgba(255, 68, 0, 0.342);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: xx-large;
+    display: none;
+    z-index: 10;
+    transition: all 0.4s ease-in;
+}
+.scrollToHome:hover {
+    color: rgb(99, 0, 0);
+}
+/* -------end footer---------- */
+
+/* -----------------------------start css p-blog ------------------------ */
+/*------------------ start header page------------ */
+.p-blog > .jumbotron {
+    position: relative;
+    background-image: url(../images/bg-head-blog.jpg);
+    background-size: cover;
+}
+.p-blog > .jumbotron .overlay {
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.p-blog > .jumbotron .container nav .breadcrumb {
+    background-color: rgba(0, 0, 0, 0);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+.p-blog > .jumbotron .container nav .breadcrumb .breadcrumb-item {
+    z-index: 3;
+    color: white;
+}
+.p-blog > .jumbotron .breadcrumb .fas {
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in;
+}
+.p-blog > .jumbotron .breadcrumb .fas:hover {
+    color: rgb(255, 70, 0);
+}
+.p-blog > .jumbotron .container h1,
+.p-blog > .jumbotron .container p {
+    position: relative;
+    color: white;
+    z-index: 3;
+}
+.p-blog .blogs .jumbotron {
+    transition: background-color 0.25s ease-in;
+    position: relative;
+}
+.p-blog .blogs .jumbotron:hover {
+    background-color: rgb(214, 216, 218);
+}
+.p-blog .blogs .jmbtrn-after .jumbotron::after,
+.p-blog .blogs .jmbtrn-after .jumbotron::before {
+    content: "";
+    width: 3px;
+    height: 0%;
+    background-color: rgb(255, 70, 0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: height 0.25s ease-in;
+}
+.p-blog .blogs .jmbtrn-after .jumbotron::after {
+    left: 0;
+}
+.p-blog .blogs .jmbtrn-after .jumbotron::before {
+    right: 0;
+}
+.p-blog .blogs .jmbtrn-after:hover .jumbotron::after,
+.p-blog .blogs .jmbtrn-after:hover .jumbotron::before {
+    height: 50%;
+}
+/*------------------ end header page------------ */
+/*------------------ start blogs------------------ */
+.p-blog .jumbotron {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jumbotron .blog_info {
+    flex: 2;
+}
+.jumbotron .blog_info .btn-danger {
+    background-color: rgba(0, 0, 0, 0.884);
+    border: none;
+    color: rgb(255, 70, 0);
+}
+.jumbotron .blog_info .btn-danger:hover {
+    background-color: black;
+}
+.jumbotron .blog_image {
+    flex: 1;
+}
+.blogs nav .pagination .page-item .page-link {
+    color: black;
+    background-color: rgba(255, 68, 0, 0.459);
+    border: none;
+    transition: background-color 0.3s ease-in;
+}
+.blogs nav .pagination .page-item .page-link:hover,
+.blogs nav .pagination .page-item .active {
+    background-color: rgb(255, 70, 0);
+}
+.blogs .list-group .list-group-item.active {
+    background-color: rgba(5, 5, 5, 0.911);
+    border-color: rgb(5, 5, 5);
+    color: rgb(255, 70, 0);
+}
+.blogs .list-group .list-group-item {
+    position: relative;
+}
+.blogs .list-group .list-group-item span {
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    font-size: 10px;
+}
+/* --------start subscription------- */
+.p-blog .subscrip {
+    min-height: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-image: url(../images/back-sub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.p-blog .subscrip .overlay {
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.p-blog .subscrip .container {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.p-blog .subscrip .container h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+.p-blog .subscrip .container form {
+    display: flex;
+    flex-direction: column;
+}
+.p-blog .subscrip .container form input {
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
+.p-blog .subscrip .container form .btn {
+    background-color: rgba(255, 70, 0, 0.767);
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+}
+.p-blog .subscrip .container form .btn:hover {
+    background-color: rgb(255, 70, 0);
+}
+/* --------end subscription-------- */
+/*------------------ end blogs------------------ */
+
+/* -----------------------------end css p-blog ------------------------ */
+/* -----------------------------start css p-blog-detailes ------------------------ */
+.p-blog-detailes > .jumbotron {
+    position: relative;
+    background-image: url(../images/new1.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+.pbd-plus > .jumbotron {
+    position: relative;
+    background-image: url(../images/new2.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+.p-blog-detailes > .jumbotron .overlay {
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in;
+}
+.p-blog-detailes > .jumbotron:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.p-blog-detailes > .jumbotron .container nav .breadcrumb {
+    background-color: rgba(0, 0, 0, 0);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+.p-blog-detailes > .jumbotron .container nav .breadcrumb .breadcrumb-item {
+    z-index: 3;
+    color: white;
+}
+.p-blog-detailes > .jumbotron .breadcrumb .fas,
+.p-blog-detailes > .jumbotron .breadcrumb a {
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in;
+}
+.p-blog-detailes > .jumbotron .breadcrumb .fas:hover,
+.p-blog-detailes > .jumbotron .breadcrumb a:hover {
+    color: rgb(255, 70, 0);
+}
+.p-blog-detailes > .jumbotron .container h1,
+.p-blog-detailes > .jumbotron .container p {
+    position: relative;
+    color: white;
+    z-index: 3;
+}
+.p-blog-detailes .detailes p {
+    white-space: pre-wrap;
+    text-align: justify;
+}
+.p-blog-detailes .detailes nav {
+    display: flex;
+}
+.p-blog-detailes .detailes nav .list_detailes {
+    background: 0 0;
+    list-style: none none;
+    line-height: 1.6;
+    margin: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #eee;
+    padding: 20px 30px ;
+    border-radius: 10px;
+}
+.p-blog-detailes .detailes fieldset.share {
+    text-align: center;
+    border: rgba(255, 68, 0, 0.315) solid 2px;
+    border-radius: 20px;
+}
+.p-blog-detailes .detailes fieldset legend {
+    width: fit-content;
+}
+.p-blog-detailes .detailes ul.share {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.p-blog-detailes .detailes ul.share li {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 68, 0, 0.384);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.p-blog-detailes .detailes ul.share li:hover {
+    background-color: rgb(255, 50, 0);
+}
+.p-blog-detailes .detailes ul.share li i {
+    color: black;
+}
+.p-blog-detailes .detailes .related_articles {
+    margin-top: 100px;
+}
+.p-blog-detailes .detailes .related_articles a {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.p-blog-detailes .detailes .related_articles .overlay {
+    width: calc(100% - 30px);
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.74);
+    border-radius: 20px;
+    transition: background-color 0.5s ease-in;
+}
+.p-blog-detailes .detailes .related_articles a:hover .overlay {
+    background-color: rgba(5, 5, 5, 0.295);
+}
+.p-blog-detailes .detailes .related_articles h5 {
+    color: rgb(255, 50, 0);
+    max-width: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translateX(-25%);
+    left: 40%;
+    z-index: 2;
+    transition: color 0.5s ease-in;
+}
+.p-blog-detailes .detailes .related_articles a:hover h5 {
+    color: white;
+}
+.p-blog-detailes .detailes .related_articles a img {
+    transition: transform 0.5s ease-in;
+}
+.p-blog-detailes .detailes .related_articles a:hover img {
+    transform: scale(1.3);
+}
+.p-blog-detailes .detailes .follow {
+    background-color: #000;
+    color: rgb(255, 50, 0);
+    padding: 5px 10px;
+}
+.p-blog-detailes .detailes .icon-follow {
+    padding-left: 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.p-blog-detailes .detailes .icon-follow li {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgb(255, 50, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.p-blog-detailes .detailes .icon-follow li:hover {
+    border-radius: 50%;
+}
+.p-blog-detailes .detailes .icon-follow li i {
+    color: #000;
+    font-size: 17px;
+}
+.p-blog-detailes .detailes .visitors {
+    float: left;
+    font-size: 20px;
+}
+/* -----------------------------end css p-blog-detailes ------------------------ */
+/* -----------------------------start css contact ------------------------ */
+
+.p-contact_us > .jumbotron {
+    position: relative;
+    background-image: url(../images/bg_contact.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+.p-contact_us .contact .card {
+    border-color: rgba(255, 68, 0, 0.226);
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgba(255, 70, 0, 0.267);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 174 0 / 25%);
+}
+.contact .btn {
+    color: rgb(255, 50, 0);
+    background-color: rgb(30, 30, 30);
+    border-color: rgb(5, 5, 5);
+    transition: ease-in 0.3s background-color;
+}
+.contact .btn:hover {
+    background-color: rgba(0, 0, 0);
+}
+/* -----------------------------end css contact ------------------------ */
+/* -----------------------------start css courses ------------------------ */
+
+.p-courses .courses .card {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.842);
+    border: none;
+    box-shadow: 5px 5px 5px rgba(255, 70, 0, 0.507);
+    transition: all 0.3s ease-in-out;
+}
+.p-courses .courses .card:hover {
+    background-color: rgb(30, 30, 30);
+    box-shadow: 5px 5px 5px rgb(255, 70, 0);
+}
+.p-courses .courses .card img {
+    width: 100%;
+    height: 250px;
+    transition: ease-in-out transform 0.3s;
+}
+.p-courses .courses .card:hover img {
+    transform: scale(1.1);
+}
+.p-courses .courses .card .card-body:last-child .ev i {
+    color: rgba(255, 68, 0, 0.836);
+}
+.p-courses .courses .card .card-body h5 a {
+    color: white;
+}
+.p-courses .courses .card hr {
+    background-color: rgba(238, 238, 238, 0.384);
+}
+.p-courses .courses .card .badge {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+    background-color: rgba(255, 51, 0, 0.726);
+}
+.p-courses .courses .card .card-text {
+    position: relative;
+    text-align: justify;
+}
+.p-courses .courses .card .card-text::after {
+    content: "";
+    background-color: rgba(238, 238, 238, 0.384);
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    right: -13px;
+    top: 10px;
+}
+.p-courses .courses .card .ff {
+    display: flex;
+    flex-direction: column;
+}
+.p-courses .courses .card .ff div {
+    margin-bottom: 10px;
+    color: rgba(255, 68, 0, 0.753);
+    display: flex;
+    align-items: center;
+}
+.p-courses .courses .card .ff div i {
+    margin-right: 4px;
+    transition: ease-in-out 0.3s color;
+}
+.p-courses .courses .card .ff div:hover i {
+    color: rgb(255, 51, 0);
+}
+.p-courses .courses .card .card-body .ev .btn {
+    background-color: rgba(255, 51, 0, 0.541);
+    color: #000;
+    padding-top: 8px;
+    transition: ease-in-out 0.3s background-color;
+}
+.p-courses .courses .card .card-body .ev .btn:hover {
+    background-color: rgb(255, 50, 0);
+}
+.p-courses .courses .card .card-body .ev div h6 {
+    color: rgba(255, 255, 255, 0.678);
+    margin-bottom: 0px;
+}
+.p-courses .courses nav {
+    margin-top: 40px;
+}
+.p-courses .courses nav .pagination {
+    justify-content: center;
+}
+.p-courses .courses nav .page-item .page-link {
+    background-color: rgba(255, 51, 0, 0.205);
+    color: #000;
+    border: none;
+    transition: 0.4s background-color ease-in-out;
+    margin-left: 5px;
+}
+.p-courses .courses nav .page-item .page-link:hover {
+    background-color: rgba(255, 51, 0, 0.829);
+}
+.p-courses > .jumbotron {
+    position: relative;
+    background-image: url(../images/bg_courses.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+/* -----------------------------end css courses ------------------------ */
+/* ----------- start modal ----------- */
+.modal-content {
+    border: 1px solid rgba(255, 38, 0, 0.555);
+    box-shadow: rgb(255, 70, 0) 2px 2px 20px;
+}
+.modal-header {
+    border-bottom: 1px solid rgba(255, 38, 0, 0.336);
+}
+.modal-footer {
+    border-top: 1px solid rgba(255, 38, 0, 0.336);
+}
+.close span {
+    color: rgb(255, 70, 0);
+}
+.close span:hover {
+    color: rgb(255, 40, 0);
+}
+.modal-footer button:last-child {
+    background-color: rgb(255, 70, 0);
+}
+.modal-footer button:last-child:hover {
+    background-color: rgb(255, 40, 0);
+}
+/* ----------- end modal ----------- */
+/* ----------- العناصر المزيفة ------------  */
+h2 {
+    position: relative;
+}
+h2::after {
+    content: "";
+    width: 5%;
+    height: 2px;
+    background-color: rgba(255, 68, 0, 0.925);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    transition: width 0.5s ease-in-out;
+}
+.feutures:hover h2::after,
+.our-prog:hover h2::after,
+.our-team:hover h2::after,
+.statstic:hover h2::after,
+.our_customers:hover h2::after,
+.recent_news:hover h2::after,
+.related_articles:hover h2::after,
+fieldset:hover legend::after {
+    width: 20%;
+}
+.feutures .feutures_item::after,
+.feutures .feutures_item::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 70, 0);
+    width: 1px;
+    height: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: height 0.3s ease-in;
+}
+.feutures .feutures_item::after {
+    left: 0;
+}
+.feutures .feutures_item::before {
+    right: 0;
+}
+.feutures .feutures_item:hover::after,
+.feutures .feutures_item:hover::before {
+    height: 50%;
+}
+.h-f {
+    position: relative;
+}
+.h-f::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(255, 68, 0, 0.925);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    transition: width 0.5s ease-in-out;
+}
+div.item-after:hover h3.h-f::after,
+li.item-after:hover span.h-f::after,
+div.item-after:hover h4.h-f::after,
+div.item-after:hover h5.h-f::after {
+    width: 100%;
+}
