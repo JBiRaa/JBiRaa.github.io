@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- ---------------------------------start_header-------------------------- -->
+  <header>
+      <div class="container">
+          <div class="row" style="display: flex; align-items: center; height: 100%;">
+              <div class="col" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                <p style="margin-top: auto; margin-bottom: auto;"><i class="fas fa-phone-alt"></i> <span>:050505050505</span></p>
+                <p style="margin-top: auto; margin-bottom: auto;"><i class="far fa-envelope"></i> <span>: jbiraa@gmail.com</span></p>
+              </div>
+              <div class="col">
+                <a href="" class="btn text">EN</a>
+                <a href="" class="btn text" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                <a href="" class="btn text">Sign Up for Free</a>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ---------------------------------end_header---------------------------- -->
+  <!-- ---------------------------------start_navbar----------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="inde.html">
+        <i class="fas fa-school"></i>
+        <div class="name_site">
+            <h3>JBiRaa</h3>
+            <p>We believe that your success is our success.</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blogs 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="blog.html"><i class="fas fa-newspaper"></i> Home Blog</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-shapes"></i> miscellaneous articles</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-user-tie"></i> Expert Interviews</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i> Your Stories</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- --------------------------------end_navbar----------------------------- -->
+  <!-- --------------------------------start_slider--------------------------- -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="overlay"></div>
+      <div class="carousel-item active">
+        <img src="images/img-slider1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>online learning is the next big step</h5>
+          <p>Providing a variety of educational resources that eliminate individual differences between learners</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/img-slider2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>elearning requires careful planning</h5>
+          <p>"elearning doesn't just "happen" ! it requires careful planning and implementaion" - anonymous</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/img-slider3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>we need to bring best to people </h5>
+          <p>With official certificates, we provide the opportunity to learn for those whose life circumstances do not allow them to attend traditional education</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- ------------------------------end_slider------------------------------- -->
+
+  <!-- ------------------------------start_feuture---------------------------- -->
+  <div class="feutures text-center">
+    <h2>MY FEUTURES</h2>
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-2 col-sm-5 mb-5 feutures_item">
+          <i class="fas fa-photo-video rounded-circle"></i>
+          <h3>Online Course</h3>
+          <p>An appropriate mechanism to explain the material in an easy way with the availability of direct and indirect discussion sessions between students and professors.</p>
+          <button class="btn btn-dark">Read More</button>
+        </div>
+        <div class="col-lg-2 col-sm-5 mb-5 feutures_item">
+          <i class="fas fa-book rounded-circle"></i>
+          <h3>Lesson</h3>
+          <p>High quality recorded content with an easy explanation and an appropriate teaching plan according to each field with free access to educational content to suit the student.</p>
+          <button class="btn btn-dark">Read More</button>
+        </div>
+        <div class="col-lg-2 col-sm-5 mb-5 feutures_item">
+          <i class="fas fa-file-alt rounded-circle"></i>
+          <h3>Quizzes</h3>
+          <p>Electronic tests via multimedia and simulated paper-based tests to provide immediate feedback on wrong answers, and take into account all educational and technical aspects.</p>
+          <button class="btn btn-dark">Read More</button>
+        </div>
+        <div class="col-lg-2 col-sm-5 mb-5 feutures_item">
+          <i class="fas fa-award rounded-circle"></i>
+          <h3>Certificates</h3>
+          <p>Our institution is nationally accredited, which means that we provide nationally accredited programs and certificates. You can request a free accredited and paid certificate for a small fee.</p>
+          <button class="btn btn-dark">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------end_feuture--------------------------- -->
+
+  <!-- -----------------------start Our educational programs ----------------->
+  <div class="our-prog">
+    <div class="container">
+      <div class="text-center">
+        <h2>Our Educational Programs</h2>
+      </div>
+      <div class="row mt-5 justify-content-around">
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item ">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog1.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Interactive English Program</h4>
+              <span>28/06/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog2.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Excel: from zero to professional</h4>
+              <span>17/06/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog3.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">engineering design software revit</h4>
+              <span>30/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog4.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Psychological education for self-care</h4>
+              <span>25/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog5.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Fashion design</h4>
+              <span>21/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog6.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Safe investment in economic crises</h4>
+              <span>20/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog7.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">French language (3)</h4>
+              <span>12/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog8.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">French language (2)</h4>
+              <span>09/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog9.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Business sustainability through sustainable development</h4>
+              <span>04/05/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog10.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Mosque Architecture: Historical Roots and Modern Influences</h4>
+              <span>22/04/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="">
+              <div class="overlay d-flex align-items-center justify-content-center"><span>Learn</span></div>
+              <img src="images/prog11.jpg" class="prog-img">
+              <div class="tag">Standing</div>
+              <h4 class="prog-title">Mind maps</h4>
+              <span>12/04/2021 <i class="far fa-calendar-alt"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="prog_item">
+            <a href="#">
+              <div class="overlay d-flex align-items-center justify-content-center"><i class="fas fa-search-plus fa-3x"></i></div>
+              <div class="read_more"></div>
+              <div class="p-3"></div>
+              <h4 class="browse_all">BROWSE ALL</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------end Our educational programs ------------------->
+
+  <!-- ---------------------------------start our team------------------------ -->
+  <div class="our-team mt-5 text-center">
+    <h2 style="font-size: 40px; margin-bottom: 20px;">Our Senior Staff</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 ">
+          <div class="card bg-dark mb-2 item-after" style="width: 17rem;">
+            <img src="images/team-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title h-f">Dennis Ritchie</h4>
+              <p class="card-text">Head of Software Engineering and Research Department</p>
+              <a href=""><i class="fab fa-facebook-f fa-2x m"></i></a>
+              <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+              <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+              <a href=""><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card bg-dark mb-2 item-after" style="width: 17rem;">
+            <img src="images/team-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title h-f">Ken Thompson</h4>
+              <p class="card-text">Head of the video production and editing department</p>
+              <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+              <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+              <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+              <a href=""><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card bg-dark mb-2 item-after" style="width: 17rem;">
+            <img src="images/team-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title h-f">James Gosling</h4>
+              <p class="card-text">Director of Human Resources, Relations and Finance</p>
+              <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+              <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+              <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+              <a href=""><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card bg-dark mb-2 item-after" style="width: 17rem;">
+            <img src="images/team-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title h-f">William Nye</h4>
+              <p class="card-text">Founder and Chairman of the Board of Directors in splint</p>
+              <a href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+              <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+              <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+              <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+              <a href=""><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------end our team-------------------------- -->
+  <!-- ---------------------------------start statstic------------------------ -->
+  <div class="statstic">
+    <div class="overlay text-center">
+      <div class="container">
+        <h2>OUR STATS</h2>
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <p>100%</p>
+            <h3>Success Rate</h3>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p>12+</p>
+            <h3>Years of Service</h3>
+          </div>
+          <div class="col-6 col-lg-3">              
+            <p>135k+</p>
+            <h3>Students</h3>
+          </div>
+          <div class="col-6 col-lg-3">
+            <p>500+</p>
+            <h3>Courses</h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------------end statstic--------------------------- -->
+  <!-- --------------------------------our customers-------------------------- -->
+  <div class="our_customers text-center">
+    <h2 class="mt-3">OUR CUSTOMERS</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg col-md-3 col-4">
+          <img src="images/logo-cstm1e.png" >
+        </div>
+        <div class="col-lg col-md-3 col-4">
+          <img src="images/logo-cstm2e.png">
+        </div>
+        <div class="col-lg col-md-3 col-4">
+          <img src="images/logo-cstm3e.png">
+        </div>
+        <div class="col-lg col-md-3 col-4">
+          <img src="images/logo-cstm4e.png">
+        </div>
+        <div class="col-lg col-md-3 col-4">
+          <img src="images/logo-cstm5e.png">
+        </div>
+        <div class="col-lg col-md-3 col-4">
+          <img src="images/logo-cstm6e.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------end customers---------------------------- -->
+  <!-- -----------------------------start recent news------------------------ -->
+  <div class="recent_news mt-5 text-center">
+    <h2>RECENT NEWS</h2>
+    <div class="container">
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card h-100 item-after">
+              <div class="date-news">23/07/2021</div>
+              <img src="images/new1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title h-f d-inline-block">Success in life</h5>
+                <p class="card-text">In this article, you will learn a lot of information about the basics and factors of success in life. Sometimes we wonder why other people achieve their life goals...</p>
+                <a href="blogs_detailes.html" class="btn btn-dark" style="color: rgb(255, 70, 0);">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 item-after">
+              <div class="date-news">23/07/2021</div>
+              <img src="images/new2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title h-f d-inline-block">How to build a strong personality?</h5>
+                <p class="card-text">Building a strong character is the ability to define who you are at your best, to become the best version of yourself to face daily challenges...</p>
+                <a href="blogs_detailes+.html" class="btn btn-dark" style="color: rgb(255, 70, 0);">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 item-after">
+              <div class="date-news">20/07/2021</div>
+              <img src="images/new3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title h-f d-inline-block">Misconceptions about happiness!</h5>
+                <p class="card-text">In this short guide, we'll learn best practice on how to build daily habits that help increase productivity, as well as how to develop your personality...</p>
+                <a class="btn btn-dark" style="color: rgb(255, 70, 0);">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 item-after">
+              <div class="date-news">19/07/2021</div>
+              <img src="images/new4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title h-f d-inline-block">Before learning programming</h5>
+                <p class="card-text">Programming is defined as the language we use to talk to computers. Learning programming is great for anyone who wants to get a job...</p>
+                <a class="btn btn-dark" style="color: rgb(255, 70, 0);">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 item-after">
+              <div class="date-news">17/07/2021</div>
+              <img src="images/new5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title h-f d-inline-block">What is active learning?</h5>
+                <p class="card-text">Active learning is defined as an approach to teaching that involves actively engaging students in the learning material through discussions and problem solving...</p>
+                <a class="btn btn-dark" style="color: rgb(255, 70, 0);">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 item-after">
+              <div class="date-news">15/07/2021</div>
+              <img src="images/new6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title h-f d-inline-block">Critical and logical thinking</h5>
+                <p class="card-text">How do you develop critical thinking skill? Critical thinking is an essential life skill that can help us process information independently and learn from experience...</p>
+                <a class="btn btn-dark" style="color: rgb(255, 70, 0);">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class=" p-1" href="blog.html"><i class="fas fa-search-plus"></i> BROWSE MORE </a>
+    </div>
+  </div>
+  
+  <!-- ------------------------------end recent news-------------------------- -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn ">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------start footer----------------------------- -->
+  <footer class="mt-5 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 f-item">
+          <a class="navbar-brand" href="inde.html">
+            <i class="fas fa-school"></i>
+            <div class="name_site">
+                <h3>JBiRaa</h3>
+                <p>We believe that your success is our success.</p>
+            </div>
+          </a>
+          <p>JBiRaa launched 10 years ago to share our accumulated knowledge with other business professionals. We want to help you understand the most common pitfalls and mistakes many businesses make.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 f-item pl-3">
+          <div class="item-after">
+            <div class="heads-f d-flex">
+              <i class="fas fa-link"></i>
+              <h3 class="h-f">Important Links</h3>
+            </div>
+            <ul style="list-style: none;" class="link">
+              <li class="item-after active">
+                  <a href="index.html"><i class="fas fa-home"></i> <span class="h-f">Home</span></a>
+              </li>
+              <li class="item-after">
+                  <a href="blog.html"><i class="fas fa-newspaper"></i> <span class="h-f">Blog</span></a>
+              </li>
+              <li class="item-after">
+                <a href="courses.html"><i class="fas fa-book"></i> <span class="h-f">Courses</span></a>
+              </li>
+              <li class="item-after">
+                  <a href=""><i class="fas fa-users"></i> <span class="h-f">Our Team</span></a>
+              </li>
+              <li class="item-after">
+                  <a href="contact_us.html"><i class="fas fa-tty"></i> <span class="h-f">Contact Us</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 f-item">
+          <div class="d-block item-after">
+            <div class="heads-f d-flex">
+              <i class="fal fa-plus-square"></i>
+              <h3 class="h-f">Fullow Us</h3>
+            </div>
+            <ul style="list-style: none;" class="d-flex flex-wrap flex-row icon-follow">
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-youtube"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+            </ul>
+          </div>
+          <div class="d-block item-after">
+            <div class="heads-f d-flex mt-4">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3 class="h-f">Contact Info</h3>
+            </div>
+            <ul style="list-style: none;" class="contact">
+              <li class="d-flex">
+                <i class="fas fa-phone"></i> 
+                <p><b>Phone:</b> <br>
+                  505-241-788
+                </p>
+              </li>
+              <li class="d-flex">
+                <i class="fas fa-envelope"></i> 
+                <p><b>E-mail:</b> <br>
+                  info@JBiRaaSchool.com
+                </p>
+              </li>
+              <li class="d-flex">
+                <i class="fas fa-map-marker-alt"></i> 
+                <p><b>Location:</b> <br>
+                  4600 Friendship Lane Santa Clara, CA 95050
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="end-footer">copyright &copy; 2021 All rights reserved to JBiRaa</div>
+  <a href="#" class="scrollToHome" style="display: inline;">
+    <i class="fas fa-arrow-circle-up"></i>
+  </a>
+  <!-- ------------------------------end footer------------------------------- -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
